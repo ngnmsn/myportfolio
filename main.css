@@ -123,6 +123,10 @@ img {
     gap: 1rem;
 }
 
+.navigation a {
+    height: 100%;
+}
+
 .navigation-item {
     height: 100%;
     display: flex;
@@ -635,7 +639,7 @@ img {
     color: hsl(215 32% 37% / 100%);
 }
 
-.account-background {
+.accounts-background {
     width: 100%;
     height: fit-content;
     display: flex;
@@ -645,7 +649,7 @@ img {
     padding: 1rem 8rem;
 }
 
-.account-content {
+.accounts-content {
     width: 100%;
     height: fit-content;
     display: flex;
@@ -656,20 +660,20 @@ img {
     padding: 1rem;
 }
 
-.account-icon {
+.accounts-icon {
     height: 6rem;
 }
 
-.account-icon img {
+.accounts-icon img {
     height: 6rem;
 }
 
-.account-id {
+.accounts-id {
     width: fit-content;
     height: fit-content;
 }
 
-.account-id p {
+.accounts-id p {
     font-size: 1.25rem;
     font-weight: 400;
 }
