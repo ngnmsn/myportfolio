@@ -34,9 +34,11 @@ Shin Naganuma（長沼 伸）のポートフォリオサイトです。バック
 
 ### 主な対応内容
 - **ナビゲーション**: スマートフォンではハンバーガーメニューに変更
+- **固定ヘッダー**: スクロール時も常に上部に表示される固定ナビゲーション
 - **レイアウト**: 縦配置への変更、適切な余白調整
 - **フォントサイズ**: 画面サイズに応じた最適化
 - **コンテンツ**: グリッドレイアウトの列数調整
+- **位置調整**: Biography タイムラインの動的な高さと位置最適化
 
 ## 🛠 技術スタック
 
@@ -94,15 +96,19 @@ myportfolio/
 
 ## 🚀 特別な機能
 
-### インタラクティブ要素
-- **ハンバーガーメニュー**: スムーズなアニメーション
+### Interactive Elements
+- **固定ヘッダー**: スクロール時も常にアクセス可能なナビゲーション
+- **ハンバーガーメニュー**: スムーズなアニメーション付きモバイルメニュー
+  - タブレット: 画面幅70%のサイドメニュー
+  - スマートフォン: 画面幅100%のフルスクリーンメニュー
 - **レスポンシブナビゲーション**: 画面サイズに応じた表示切り替え
 - **スキル経験バー**: 視覚的な経験年数表示
 
 ### デザインハイライト
-- **タイムライン**: Biography セクションの動的縦線
+- **動的タイムライン**: Biography セクションの内容に応じて伸縮する縦線
 - **グラデーション**: ヘッダー・フッターの美しいグラデーション
 - **シャドウエフェクト**: 立体感のあるデザイン
+- **z-index管理**: 適切な重なり順序による美しいUI
 
 ## 🔧 カスタマイズ
 
@@ -123,7 +129,7 @@ myportfolio/
 ---
 
 **開発者**: Shin Naganuma  
-**更新日**: 2025年6月14日
+**更新日**: 2025年1月26日
 
 ---
 
@@ -160,10 +166,12 @@ This is a portfolio website for Shin Naganuma, showcasing his career, skills, an
 - **Smartphone (Small)**: 480px and below
 
 ### Key Responsive Features
-- **Navigation**: Hamburger menu for smartphones
+- **Navigation**: Hamburger menu for smartphones and tablets
+- **Fixed Header**: Always accessible navigation during scrolling
 - **Layout**: Vertical orientation with appropriate spacing
 - **Font Sizes**: Optimized for each screen size
 - **Content**: Grid layout column adjustments
+- **Position Optimization**: Dynamic Biography timeline height and positioning
 
 ## 🛠 Technology Stack
 
@@ -210,7 +218,10 @@ This is a portfolio website for Shin Naganuma, showcasing his career, skills, an
 ## 🚀 Special Features
 
 ### Interactive Elements
-- **Hamburger Menu**: Smooth animations
+- **Fixed Header**: Always accessible navigation that remains at the top during scrolling
+- **Hamburger Menu**: Smooth animations with responsive overlay sizing
+  - Tablet: 70% screen width side menu
+  - Smartphone: 100% full-screen menu
 - **Responsive Navigation**: Display switching based on screen size
 - **Skill Experience Bars**: Visual representation of experience years
 
@@ -238,4 +249,4 @@ This is a portfolio website for Shin Naganuma, showcasing his career, skills, an
 ---
 
 **Developer**: Shin Naganuma  
-**Last Updated**: June 14, 2025
+**Last Updated**: January 26, 2025
