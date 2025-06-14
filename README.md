@@ -2,6 +2,8 @@
 
 Shin Naganuma（長沼 伸）のポートフォリオサイトです。バックエンドエンジニアとしての経歴、スキル、アカウント情報を紹介しています。
 
+🔗 **ライブサイト**: https://ngnmsn.github.io/myportfolio/
+
 ## 🌐 サイト概要
 
 レスポンシブデザインに対応したシングルページアプリケーション（SPA）形式のポートフォリオサイトです。PC、タブレット、スマートフォンの全デバイスで最適な表示を実現しています。
@@ -130,6 +132,8 @@ myportfolio/
 ## 🌐 Overview
 
 This is a portfolio website for Shin Naganuma, showcasing his career, skills, and account information as a backend engineer. The site is built as a responsive Single Page Application (SPA) that provides optimal viewing experience across PC, tablet, and smartphone devices.
+
+🔗 **Live Site**: https://ngnmsn.github.io/myportfolio/
 
 ## 🎨 Design Specifications
 
