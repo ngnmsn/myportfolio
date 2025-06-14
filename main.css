@@ -828,7 +828,7 @@ img {
     }
     
     .navigation a {
-        width: 80%;
+        width: 90%;
     }
     
     .navigation-item {
@@ -1014,7 +1014,7 @@ img {
     }
     
     .navigation {
-        width: 75%;
+        width: 100%;
         padding-top: 4rem;
         gap: 1.2rem;
     }
@@ -1078,7 +1078,19 @@ img {
         letter-spacing: 0.08rem;
     }
     
-    /* Biography セクション */
+    /* Biography セクション - スマートフォン用位置調整 */
+    .biography-backgroud {
+        padding: 0 0.5rem;
+    }
+    
+    .biography-layout {
+        padding: 0 0.5rem;
+    }
+    
+    .biography-line {
+        left: calc(0.5rem + 1.5rem - 8px);
+    }
+    
     .biography-content-item-year p {
         font-size: 1rem;
     }
