@@ -38,6 +38,7 @@ body {
     line-height: 1;
     font-family: "Roboto", "Noto Sans JP", sans-serif;
     letter-spacing: 0.1rem;
+    padding-top: 4rem; /* ヘッダーの高さ分のパディング */
 }
 
 ol, ul {
@@ -111,6 +112,9 @@ img {
    ========================================================================== */
 
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 4rem;
     background: var(--primary-gradient);
@@ -118,6 +122,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 100;
 }
 
 .navigation-bar {
@@ -732,12 +737,20 @@ img {
         overflow-x: hidden;
     }
     
+    body {
+        padding-top: 5rem; /* タブレット・スマホではハンバーガーメニュー分少し多めに */
+    }
+    
     /* ヘッダー */
     .header {
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
         height: auto;
         min-height: 4rem;
         padding: 0.5rem;
+        z-index: 100;
     }
     
     .navigation-bar {
@@ -749,6 +762,7 @@ img {
         align-items: center;
         gap: 1rem;
         position: relative;
+        z-index: 101;
     }
     
     .title h1 {
@@ -764,7 +778,8 @@ img {
         width: 30px;
         height: 24px;
         justify-content: space-between;
-        z-index: 1001;
+        z-index: 1002;
+        position: relative;
     }
     
     .hamburger-menu span {
@@ -773,10 +788,12 @@ img {
         background-color: hsl(0 0% 100% / 100%);
         transition: all 0.3s ease;
         transform-origin: center;
+        position: relative;
+        z-index: 1003;
     }
     
     .hamburger-menu.active span:nth-child(1) {
-        transform: rotate(45deg) translate(6px, 6px);
+        transform: rotate(45deg) translate(7.25px, 7.25px);
     }
     
     .hamburger-menu.active span:nth-child(2) {
@@ -784,7 +801,7 @@ img {
     }
     
     .hamburger-menu.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(6px, -6px);
+        transform: rotate(-45deg) translate(7.25px, -7.25px);
     }
     
     /* ナビゲーションメニュー */
@@ -802,7 +819,7 @@ img {
         padding-top: 5rem;
         gap: 1.5rem;
         transition: right 0.3s ease;
-        z-index: 1000;
+        z-index: 1001;
         box-shadow: -2px 0 10px hsl(0 0% 0% / 20%);
     }
     
@@ -972,6 +989,10 @@ img {
 
 /* スマートフォン専用（480px以下） */
 @media (max-width: 480px) {
+    body {
+        padding-top: 4.5rem; /* スマートフォンでは少し調整 */
+    }
+    
     .header {
         height: auto;
         min-height: 3.5rem;
@@ -988,6 +1009,8 @@ img {
     .hamburger-menu {
         width: 25px;
         height: 20px;
+        z-index: 1002;
+        position: relative;
     }
     
     .navigation {
@@ -1002,6 +1025,15 @@ img {
     
     .navigation-item p {
         font-size: 0.95rem;
+    }
+    
+    /* スマートフォン専用のハンバーガーメニュー×形調整 */
+    .hamburger-menu.active span:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+    
+    .hamburger-menu.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
     }
     
     .main-area {
