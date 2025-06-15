@@ -47,6 +47,11 @@ Shin Naganuma（長沼 伸）のポートフォリオサイトです。バック
 - **CSS3**: CSS変数、Flexbox、Grid Layout、Media Queries
 - **JavaScript**: ES6+、DOM操作
 
+### アセット
+- **Favicon**: ブラウザタブ・ブックマーク表示用のサイトアイコン
+- **SVGアイコン**: 技術スキル・SNSアカウント用のベクターアイコン
+- **プロフィール画像**: 最適化されたPNG形式
+
 ### 特徴
 - **完全レスポンシブ**: 全デバイス対応
 - **軽量**: 外部ライブラリ不使用
@@ -60,6 +65,7 @@ myportfolio/
 ├── index.html          # メインHTMLファイル
 ├── main.css            # スタイルシート
 ├── main.js             # JavaScript
+├── favicon.ico         # Faviconファイル
 ├── README.md           # このファイル
 └── img/                # 画像アセット
     └── *.*             # プロフィール画像、 技術スキルアイコン、SNSアイコン
@@ -94,6 +100,21 @@ myportfolio/
 ### 7. フッター
 - コピーライト表示
 
+## 🎨 Faviconについて
+
+### 概要
+Favicon（Favorite Icon）は、ブラウザのタブやブックマークに表示されるサイトのアイコンです。ユーザーがサイトを素早く識別できるよう、ブランディングの重要な要素として機能します。
+
+### 推奨仕様
+- **形式**: ICO、PNG、SVG
+- **サイズ**: 16×16px（最小）、32×32px（標準）、180×180px（Apple Touch Icon）
+- **デザイン**: シンプルで視認性の高いデザイン
+
+### 実装方法
+```html
+<link rel="icon" href="favicon.ico">
+```
+
 ## 🚀 特別な機能
 
 ### Interactive Elements
@@ -105,6 +126,7 @@ myportfolio/
 - **スキル経験バー**: 視覚的な経験年数表示
 
 ### デザインハイライト
+- **Favicon**: ブラウザタブとブックマークでの視認性向上
 - **動的タイムライン**: Biography セクションの内容に応じて伸縮する縦線
 - **グラデーション**: ヘッダー・フッターの美しいグラデーション
 - **シャドウエフェクト**: 立体感のあるデザイン
@@ -180,6 +202,11 @@ This is a portfolio website for Shin Naganuma, showcasing his career, skills, an
 - **CSS3**: CSS Variables, Flexbox, Grid Layout, Media Queries
 - **JavaScript**: ES6+, DOM manipulation
 
+### Assets
+- **Favicon**: Site icon for browser tabs and bookmarks
+- **SVG Icons**: Vector icons for technical skills and SNS accounts
+- **Profile Image**: Optimized PNG format
+
 ### Features
 - **Fully Responsive**: Cross-device compatibility
 - **Lightweight**: No external libraries
@@ -215,6 +242,21 @@ This is a portfolio website for Shin Naganuma, showcasing his career, skills, an
 ### 7. Footer
 - Copyright notice
 
+## 🎨 About Favicon
+
+### Overview
+Favicon (Favorite Icon) is a site icon displayed in browser tabs and bookmarks. It serves as an important branding element that allows users to quickly identify the site.
+
+### Recommended Specifications
+- **Format**: ICO, PNG, SVG
+- **Size**: 16×16px (minimum), 32×32px (standard), 180×180px (Apple Touch Icon)
+- **Design**: Simple and highly visible design
+
+### Implementation
+```html
+<link rel="icon" href="favicon.ico">
+```
+
 ## 🚀 Special Features
 
 ### Interactive Elements
@@ -226,6 +268,7 @@ This is a portfolio website for Shin Naganuma, showcasing his career, skills, an
 - **Skill Experience Bars**: Visual representation of experience years
 
 ### Design Highlights
+- **Favicon**: Enhanced visibility in browser tabs and bookmarks
 - **Timeline**: Dynamic vertical line in Biography section
 - **Gradients**: Beautiful gradients in header and footer
 - **Shadow Effects**: Three-dimensional design
