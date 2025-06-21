@@ -356,6 +356,16 @@ img {
     display: flex;
     align-items: center;
     gap: 1rem;
+    padding: 1rem 1rem 1rem 0;
+    border-radius: 0.5rem;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.biography-content-item:hover {
+    transform: translateY(-6px);
+    background: hsl(215 32% 37% / 5%);
+    box-shadow: 0 8px 20px hsl(215 32% 37% / 20%);
 }
 
 .biography-content-item-point {
@@ -427,6 +437,13 @@ img {
     border-radius: 1rem;
     filter: drop-shadow(0rem 0.25rem 0.25rem hsl(215 32% 37% / 50%));
     background: hsl(0 0% 100% / 100%);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.skills-content:hover {
+    transform: translateY(-4px);
+    filter: drop-shadow(0rem 0.5rem 0.75rem hsl(215 32% 37% / 35%));
 }
 
 .skills-icon {
