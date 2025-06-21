@@ -30,6 +30,7 @@ function checkInView() {
   if (window.innerWidth <= 768) {
     const biographyItems = document.querySelectorAll('.biography-content-item');
     const skillsItems = document.querySelectorAll('.skills-content');
+    const accountsItems = document.querySelectorAll('.accounts-content');
     const windowHeight = window.innerHeight;
     const centerThreshold = windowHeight * 0.6; // 画面の60%の位置
     
@@ -54,9 +55,20 @@ function checkInView() {
         item.classList.remove('in-view');
       }
     });
+    
+    accountsItems.forEach(item => {
+      const rect = item.getBoundingClientRect();
+      const itemCenter = rect.top + rect.height / 2;
+      
+      if (itemCenter <= centerThreshold && itemCenter >= windowHeight * 0.4) {
+        item.classList.add('in-view');
+      } else {
+        item.classList.remove('in-view');
+      }
+    });
   } else {
     // PC画面サイズでは in-view クラスを削除
-    document.querySelectorAll('.biography-content-item, .skills-content').forEach(item => {
+    document.querySelectorAll('.biography-content-item, .skills-content, .accounts-content').forEach(item => {
       item.classList.remove('in-view');
     });
   }

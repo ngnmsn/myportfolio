@@ -717,6 +717,15 @@ img {
     justify-content: center;
     gap: 1rem;
     padding: 1rem;
+    border-radius: 0.5rem;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.accounts-content:hover {
+    transform: translateY(-4px);
+    background: hsl(215 32% 37% / 5%);
+    box-shadow: 0 6px 16px hsl(215 32% 37% / 15%);
 }
 
 .accounts-icon {
@@ -1010,6 +1019,12 @@ img {
         gap: 1rem;
     }
     
+    .accounts-content.in-view {
+        transform: translateY(-6px);
+        background: hsl(215 32% 37% / 8%);
+        box-shadow: 0 8px 20px hsl(215 32% 37% / 20%);
+    }
+    
     .accounts-icon {
         height: 4.5rem;
     }
@@ -1199,6 +1214,12 @@ img {
     .accounts-content {
         padding: 0.8rem;
         gap: 0.8rem;
+    }
+    
+    .accounts-content.in-view {
+        transform: translateY(-8px);
+        background: hsl(215 32% 37% / 10%);
+        box-shadow: 0 10px 25px hsl(215 32% 37% / 25%);
     }
     
     .accounts-icon {
