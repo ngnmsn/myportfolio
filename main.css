@@ -961,6 +961,12 @@ img {
         font-size: 0.85rem;
     }
     
+    .biography-content-item.in-view {
+        transform: translateY(-8px);
+        background: hsl(215 32% 37% / 8%);
+        box-shadow: 0 10px 25px hsl(215 32% 37% / 25%);
+    }
+    
     /* Skills セクション */
     .skills-background {
         grid-template-columns: 1fr 1fr;
@@ -970,6 +976,11 @@ img {
     .skills-content {
         padding: 1rem;
         gap: 1.2rem;
+    }
+    
+    .skills-content.in-view {
+        transform: translateY(-6px);
+        filter: drop-shadow(0rem 0.75rem 1rem hsl(215 32% 37% / 30%));
     }
     
     .skills-name p {
@@ -1141,6 +1152,12 @@ img {
         font-size: 0.75rem;
     }
     
+    .biography-content-item.in-view {
+        transform: translateY(-10px);
+        background: hsl(215 32% 37% / 10%);
+        box-shadow: 0 12px 30px hsl(215 32% 37% / 30%);
+    }
+    
     /* Skills セクション */
     .skills-background {
         grid-template-columns: 1fr;
@@ -1149,6 +1166,11 @@ img {
     .skills-content {
         padding: 0.8rem;
         gap: 1rem;
+    }
+    
+    .skills-content.in-view {
+        transform: translateY(-8px);
+        filter: drop-shadow(0rem 1rem 1.5rem hsl(215 32% 37% / 35%));
     }
     
     .skills-name p {
