@@ -165,6 +165,22 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 0.75rem;
+    border-radius: 0.25rem;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.navigation-item:hover {
+    background: hsl(0 0% 100% / 15%);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px hsl(0 0% 0% / 15%);
+}
+
+.navigation-item:active {
+    background: hsl(0 0% 100% / 25%);
+    transform: translateY(0);
+    box-shadow: 0 1px 4px hsl(0 0% 0% / 20%);
 }
 
 .navigation-item p {
@@ -172,6 +188,11 @@ img {
     color: var(--white);
     font-weight: 400;
     white-space: nowrap;
+    transition: var(--transition);
+}
+
+.navigation-item:hover p {
+    font-weight: 500;
 }
 
 /* ハンバーガーメニューはPC・タブレットでは非表示 */
